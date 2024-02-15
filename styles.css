@@ -108,6 +108,10 @@ footer h3 {
     padding: 1em;
 }
 
+.parrafo-final {
+    text-align: center;
+}
+
 #check {
     display: none;
 }
