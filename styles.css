@@ -1,0 +1,294 @@
+body {
+    background-color: rgb(104, 145, 158);
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0; 
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(54, 88, 93);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+    gap: 5em;
+    padding: 2em;
+}
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.acerca-de h2 {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer h3 {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img1 {
+    width: 300px;
+    height: 400px;
+}
+
+.img2 {
+    display: flex;
+    width: 200px;
+    height: 700px;
+    width: 200%;
+}
+
+.parrafo1, .parrafo2 {
+    text-align: center;
+}
+
+.seccion-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.hobby-item1 {
+    padding: 1em;
+}
+
+.hobbies {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobbies h2 {
+    display: flex; 
+    align-items: center;
+    padding: 1em;
+    justify-content: space-around;
+}
+
+.imghockey, .imgfutbol, .imgmoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+   justify-content: space-between;
+}
+
+.parrafo-hockey, .parrafo-futbol, .parrafo-moto {
+    padding: 1em;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        background-color: beige;
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imagen {
+        margin-bottom: 40px;
+    }
+
+    h2.fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked .checkbtn {
+        color: gray;
+    }
+
+    .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .form-header {
+        text-align: center;
+        background-color:  rgb(54, 88, 93);
+        border: 1px solid rgb(54, 88, 93);
+        border-radius: 3px;
+      
+        width: 80%;
+        margin: 10px auto;
+        padding: 50px;
+      }
+      
+      .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .formulario {
+        background-color:  rgb(54, 88, 93);
+        border: 1px solid  rgb(54, 88, 93);
+        border-radius: 3px;
+      
+        width: 80%;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+      }
+      
+      .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"],
+      .form-row input[type="email"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 80%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+    }
+
+        .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+    
+
+    
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+
+      .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+    
+
+    
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
